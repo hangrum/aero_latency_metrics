@@ -6,7 +6,7 @@ import time
 class PrometheusClient:
     def __init__(self):
         #     # Start up the server to expose the metrics.
-        start_http_server(8001)
+        start_http_server(8000)
         self.labels = ['namespace','histogram','node','gt']
         self.g = Gauge('aerospike_latency',
           'latency of aerospike just like fucking amc showing me',self.labels)
