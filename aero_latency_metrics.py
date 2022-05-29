@@ -53,6 +53,7 @@ class PrometheusClient:
 # prometheus python
 if __name__ == '__main__':
   p = PrometheusClient()
+  # run
   while True:
     p.SetMetricsLatency()
     time.sleep(1)
